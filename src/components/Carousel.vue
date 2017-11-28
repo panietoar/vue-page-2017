@@ -2,9 +2,9 @@
   <section class="gallery">
     <img :src="backgroundImage" alt="">
       <h2>{{ currentSlide.text }}</h2>
-      <a class="more" href="#">More about Us</a>
+      <a class="more" href="#">{{ carousel.learnMore }}</a>
       <div class="controls">
-        <div v-for="(slide, index) in slides" :key="slide.text" class="slide-control" :class="{active: isSlideActive(index)}" @click.prevent="selectSlide(index)"></div>
+        <div v-for="(slide, index) in carousel.slides" :key="slide.text" class="slide-control" :class="{active: isSlideActive(index)}" @click.prevent="selectSlide(index)"></div>
       </div>
   </section>
 </template>
@@ -16,10 +16,10 @@
         currentSlideIndex: 0
       }
     },
-    props: ['slides'],
+    props: ['carousel'],
     computed: {
       currentSlide() {
-        return this.slides[this.currentSlideIndex];
+        return this.carousel.slides[this.currentSlideIndex];
       },
       backgroundImage() {
         return '/src/assets/Images/' + this.currentSlide.image;

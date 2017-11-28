@@ -11,7 +11,7 @@
         <li><a href="#contact">{{ content.contact }}</a></li>
       </ul>
     </nav>
-    <select class="four columns" id="language">
+    <select class="four columns" id="language" @change="selectLanguage">
       <option v-for="language in languages" :value="language">{{ language }}</option>
     </select>
   </header>
@@ -31,6 +31,9 @@
     methods: {
       openNav() {
         console.log('aja');
+      },
+      selectLanguage(event) {
+        this.$emit('languageSelected', event.target.value);
       }
     }
   }

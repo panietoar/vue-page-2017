@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <app-header :content="content.navigation"></app-header>
-    <app-main-heading :content="content.heading"></app-main-heading>
-    <app-carousel :slides="content.carousel.slides"></app-carousel>
+    <app-header v-if="content.navigation" :content="content.navigation" @languageSelected="changeLang"></app-header>
+    <app-main-heading v-if="content.heading" :content="content.heading"></app-main-heading>
+    <app-carousel v-if="content.carousel" :carousel="content.carousel"></app-carousel>
+    <app-hero v-if="content.hero" :hero="content.hero"></app-hero>
   </div>
 </template>
 
@@ -10,39 +11,34 @@
   import Header from './components/Header.vue';
   import MainHeading from './components/MainHeading.vue';
   import Carousel from './components/Carousel.vue';
+  import Hero from './components/Hero.vue';
+  import axios from 'axios';
 
   export default {
     components: {
       appHeader: Header,
       appMainHeading: MainHeading,
-      appCarousel: Carousel
+      appCarousel: Carousel,
+      appHero: Hero
     },
     data() {
       return {
-        content: {
-          navigation: {
-            about: 'about',
-            work: 'work',
-            contact: 'contact'
-          },
-          heading: 'We design, produce and deliver brand content.',
-          carousel: {
-            slides: [{
-              image: 'carrusel-1.jpg',
-              text: 'We design, produce and deliver brand content.'
-            }, {
-              image: 'carrusel-2.jpg',
-              text: 'Using the best talent, processes and tools.'
-            }, {
-              image: 'carrusel-3.jpg',
-              text: 'The result? Seamless global execution of multiple content types across all markets, without compromising creative quality.'
-            }, {
-              image: 'carrusel-4.jpg',
-              text: 'We call this brand logistics™, our new vision for a new content-driven media landscape.'
-            }]
-          }
-        }
+        content: {}
       }
+    },
+    methods: {
+      changeLang(lang) {
+        var vm = this;
+        axios.get('public/json/content-' + lang + '.json').then(function(response) {
+          vm.content = response.data;
+        });
+      }
+    },
+    beforeMount() {
+      var vm = this;
+      axios.get('public/json/content-eng.json').then(function(response) {
+        vm.content = response.data;
+      });
     }
   }
 </script>

@@ -1,0 +1,30 @@
+{
+  "navigation": {
+    "about": "about",
+    "work": "work",
+    "contact": "contact"
+  },
+  "heading": "We design, produce and deliver brand content.",
+  "carousel": {
+    "slides": [{
+      "image": "carrusel-1.jpg",
+      "text": "We design, produce and deliver brand content."
+    }, {
+      "image": "carrusel-2.jpg",
+      "text": "Using the best talent, processes and tools."
+    }, {
+      "image": "carrusel-3.jpg",
+      "text": "The result? Seamless global execution of multiple content types across all markets, without compromising creative quality."
+    }, {
+      "image": "carrusel-4.jpg",
+      "text": "We call this brand logistics™, our new vision for a new content-driven media landscape."
+    }],
+    "learnMore": "More about Us"
+  },
+  "hero": {
+    "title": "Brothers",
+    "text": "Launching their brands.",
+    "secondaryText": "Consumer Digital & Social Media",
+    "learnMore": "Learn More"
+  }
+}

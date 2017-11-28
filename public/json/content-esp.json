@@ -1,0 +1,30 @@
+{
+  "navigation": {
+    "about": "acerca",
+    "work": "trabajo",
+    "contact": "contacto"
+  },
+  "heading": "Diseñamos, producimos y entregamos contenido de marcas.",
+  "carousel": {
+    "slides": [{
+      "image": "carrusel-1.jpg",
+      "text": "Diseñamos, producimos y entregamos contenido de marcas."
+    }, {
+      "image": "carrusel-2.jpg",
+      "text": "Usando los mejores talentos, proesos y herramientas."
+    }, {
+      "image": "carrusel-3.jpg",
+      "text": "El resultado? una sencilla ejecución global de múltiples tipos de contenido a lo largo de todos los mercados, sin comprometer la calidad creativa."
+    }, {
+      "image": "carrusel-4.jpg",
+      "text": "Llamamos a esto Logística de Marca™, nuestra nueva visión para un entorno basado en contenido mediático."
+    }],
+    "learnMore": "Conoce más"
+  },
+  "hero": {
+    "title": "Hermanos",
+    "text": "Lanzando sus Marcas.",
+    "secondaryText": "Consumidor digital Y medios sociales",
+    "learnMore": "Conoce Mas"
+  }
+}

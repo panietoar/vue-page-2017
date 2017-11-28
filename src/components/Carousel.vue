@@ -45,21 +45,25 @@
     color: #FFF;
     display: flex;
     background-image: linear-gradient(to right, black, black 50%, rgba(0, 0, 0, 0));
+    
     img {
       opacity: 0.3;
     }
+    
     h2,
     a.more,
     .controls {
       position: absolute;
       left: 20px;
     }
+    
     h2 {
       top: 5em;
       font-size: 16px;
       font-weight: 300;
       width: 90%;
     }
+    
     a.more {
       font-size: 16px;
       color: #fff;
@@ -76,17 +80,20 @@
         vertical-align: middle;
       }
     }
+    
     .controls {
       width: 60%;
       height: 20px;
       bottom: 80px;
       display: flex;
       justify-content: space-between;
+      
       .slide-control {
         width: 40px;
         height: 20px;
         border-bottom: 1px solid #fff;
         cursor: pointer;
+        
         &.active {
           border-bottom: 5px solid #fff;
         }
@@ -97,17 +104,20 @@
   @media screen and (min-width: 321px) {
     section {
       height: 50%;
+      
       h2,
       a.more,
       .controls {
         left: 200px;
       }
+      
       h2 {
         top: 1em;
         font-size: 36px;
         font-weight: 300;
         width: 60%;
       }
+      
       .controls {
         width: 40%;
       }

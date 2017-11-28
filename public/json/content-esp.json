@@ -26,5 +26,77 @@
     "text": "Lanzando sus Marcas.",
     "secondaryText": "Consumidor digital Y medios sociales",
     "learnMore": "Conoce Mas"
+  },
+  "work": {
+    "cards": [{
+        "title": "Liderazgo Aprendido",
+        "subtitle": "Junio 21, 2017",
+        "text": "Nominación para Agencia Global del Año",
+        "color": "blue"
+      },
+      {
+        "title": "Liderazgo",
+        "subtitle": "",
+        "text": "Campaña de cuidado animal",
+        "image": {
+          "path": "dog.jpg",
+          "position": "top"
+        }
+      },
+      {
+        "title": "Trabajo",
+        "subtitle": "Pensamiento de Diseño",
+        "text": "El color ROJO está de moda, y no es un color de marca.",
+        "color": "red"
+      }, {
+        "title": "Bienes de Consumidores",
+        "subtitle": "",
+        "text": "Cuidado Personal, y sus implicaciones para el futuro",
+        "image": {
+          "path": "model.jpg",
+          "position": "bottom"
+        }
+      }, {
+        "title": "Visión",
+        "subtitle": "Junio 19, 2017",
+        "text": "El Amanecer de la Influencia Aumentada",
+        "color": "black"
+      }, {
+        "title": "Visión",
+        "subtitle": "",
+        "text": "El mejor rompehielos del 2017: Cuidar de aquellos en necesidad",
+        "image": {
+          "path": "child.jpg",
+          "position": "bottom"
+        }
+      }
+    ],
+    "readMore": "Read More"
+  },
+  "contact": {
+    "title": "Contacto",
+    "message": "Queremos saber de tí. Para dirigir tu mensaje al equipo específico, por favor selecciona la opción apropiada.",
+    "formName": "Información Personal",
+    "name": "Nombre",
+    "lastName": "Apellidos",
+    "country": "País",
+    "email": "Email",
+    "interestHeader": "Interesado en:",
+    "checkboxes": [{
+        "label": "Etiqueta checkbox"
+      },
+      {
+        "label": "Opción 1"
+      }, {
+        "label": "Opción 2"
+      }, {
+        "label": "Opción 3"
+      }, {
+        "label": "Opción 4"
+      }, {
+        "label": "Otra Opción"
+      }
+    ],
+    "cta": "Contactemos"
   }
 }

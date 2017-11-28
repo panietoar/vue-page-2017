@@ -26,5 +26,77 @@
     "text": "Launching their brands.",
     "secondaryText": "Consumer Digital & Social Media",
     "learnMore": "Learn More"
+  },
+  "work": {
+    "cards": [{
+        "title": "tought leadership",
+        "subtitle": "June 21, 2017",
+        "text": "Nomination for Global Agency of the Year",
+        "color": "blue"
+      },
+      {
+        "title": "Leadership",
+        "subtitle": "",
+        "text": "Animal treatment campaing",
+        "image": {
+          "path": "dog.jpg",
+          "position": "top"
+        }
+      },
+      {
+        "title": "Work",
+        "subtitle": "Design thinking",
+        "text": "RED color is in, and it's not a branded color.",
+        "color": "red"
+      }, {
+        "title": "Consumer Goods",
+        "subtitle": "",
+        "text": "Personal care, and its implication for the future",
+        "image": {
+          "path": "model.jpg",
+          "position": "bottom"
+        }
+      }, {
+        "title": "Insights",
+        "subtitle": "June 19, 2017",
+        "text": "The Dawn of the Augmented Influence",
+        "color": "black"
+      }, {
+        "title": "Insights",
+        "subtitle": "",
+        "text": "2017's Top Conversation Starter: Care for those in need",
+        "image": {
+          "path": "child.jpg",
+          "position": "bottom"
+        }
+      }
+    ],
+    "readMore": "Read More"
+  },
+  "contact": {
+    "title": "contact us",
+    "message": "We want to hear from you. To direct your message to a specific team, please select the appropriate tab below",
+    "formName": "Personal Information",
+    "name": "Name",
+    "lastName": "Last Name",
+    "country": "Country",
+    "email": "Email",
+    "interestHeader": "Interested In:",
+    "checkboxes": [{
+        "label": "Checkbox label"
+      },
+      {
+        "label": "Option 1"
+      }, {
+        "label": "Option 2"
+      }, {
+        "label": "Option 3"
+      }, {
+        "label": "Option 4"
+      }, {
+        "label": "Other Option"
+      }
+    ],
+    "cta": "Let's make contact"
   }
 }

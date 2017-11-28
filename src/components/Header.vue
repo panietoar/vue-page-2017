@@ -47,13 +47,16 @@
     nav {
       display: none;
     }
+    
     select {
       display: none;
     }
+    
     .logo {
       width: 25%;
       float: left;
     }
+    
     i {
       float: right;
       font-size: 30px;
@@ -64,24 +67,29 @@
   @media screen and (min-width: 321px) {
     header {
       padding: 20px 40px;
+      
       nav {
         width: 50%;
         display: block;
+        
         li {
           display: inline-block;
           cursor: pointer;
           width: 30%;
+          
           a {
             text-decoration: none;
             color: #000;
             text-align: center;
             padding: 2px 10px;
+            
             &:hover {
               border-bottom: 2px solid #2828ff;
             }
           }
         }
       }
+      
       select {
         display: block;
         float: right;
@@ -92,6 +100,7 @@
         -webkit-appearance: none;
         -moz-appearance: none;
       }
+
       i {
         display: none;
       }

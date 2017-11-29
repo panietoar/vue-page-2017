@@ -5,7 +5,8 @@
     <app-carousel v-if="content.carousel" :carousel="content.carousel"></app-carousel>
     <app-hero v-if="content.hero" :hero="content.hero"></app-hero>
     <app-work v-if="content.work" :work="content.work"></app-work>
-    <app-contact  v-if="content.contact" :contact="content.contact"></app-contact>
+    <app-contact v-if="content.contact" :contact="content.contact"></app-contact>
+    <app-footer v-if="content.footer" :footer="content.footer"></app-footer>
   </div>
 </template>
 
@@ -16,6 +17,7 @@
   import Hero from './components/Hero.vue';
   import Work from './components/Work.vue';
   import Contact from './components/Contact.vue';
+  import Footer from './components/Footer.vue';
 
   import axios from 'axios';
 
@@ -26,7 +28,8 @@
       appCarousel: Carousel,
       appHero: Hero,
       appWork: Work,
-      appContact: Contact
+      appContact: Contact,
+      appFooter: Footer
     },
     data() {
       return {
@@ -36,7 +39,7 @@
     methods: {
       changeLang(lang) {
         var vm = this;
-        axios.get('public/json/content-' + lang + '.json').then(function(response) {
+        axios.get(`public/json/content-${lang}.json`).then(function(response) {
           vm.content = response.data;
         });
       }
@@ -52,7 +55,7 @@
 
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css?family=Roboto:300');
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+  @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
   html,
   body,

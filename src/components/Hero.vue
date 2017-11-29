@@ -60,6 +60,7 @@
         text-transform: uppercase;
         font-size: 12px;
         font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
       }
 
       .text {

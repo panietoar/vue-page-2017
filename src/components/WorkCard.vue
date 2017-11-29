@@ -61,6 +61,7 @@ export default {
           text-transform: uppercase;
           font-size: 12px;
           margin-bottom: 6px;
+          font-weight: bold;
         }
       }
 

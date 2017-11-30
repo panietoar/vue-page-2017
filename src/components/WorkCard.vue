@@ -115,6 +115,7 @@ export default {
       footer {
         border-top: 1px solid #fff;
          a {
+           text-transform: uppercase;
            font-size: 8px;
          }
       }
@@ -209,6 +210,12 @@ export default {
             padding-bottom: .5em;
           }
 
+        }
+
+        footer {
+          a {
+            font-size: 12px;
+          }
         }
       
         .content {

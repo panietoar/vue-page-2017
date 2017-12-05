@@ -24,12 +24,13 @@ export default {
   section {
     margin: 1.5em 18px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
   }
 
   @media screen and (min-width: 321px) {
     section {
+      margin: 1.5em 40px;
       flex-wrap: wrap;
       flex-direction: row;
     }

@@ -162,7 +162,7 @@ export default {
       margin-bottom: .5em; 
 
       &.image {
-      padding: 50% 80px;
+      padding: 80px;
         
         .content {
           font-size: 16px;
